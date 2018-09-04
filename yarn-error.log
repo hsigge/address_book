@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/Cellar/node/10.9.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js run cucumber
+  /usr/local/Cellar/node/10.9.0/bin/node /usr/local/Cellar/yarn/1.9.4/libexec/bin/yarn.js run build
 
 PATH: 
-  /Users/rhon/.rvm/gems/ruby-2.5.1/bin:/Users/rhon/.rvm/gems/ruby-2.5.1@global/bin:/Users/rhon/.rvm/rubies/ruby-2.5.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/rhon/.rvm/bin
+  /Users/sofiasvanner/.rvm/gems/ruby-2.5.1/bin:/Users/sofiasvanner/.rvm/gems/ruby-2.5.1@global/bin:/Users/sofiasvanner/.rvm/rubies/ruby-2.5.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/sofiasvanner/.rvm/bin
 
 Yarn version: 
   1.9.4
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  SyntaxError: /Users/rhon/CA/address_book/package.json: Unexpected token } in JSON at position 630
+  SyntaxError: /Users/sofiasvanner/projects/address_book/package.json: Unexpected token } in JSON at position 749
       at JSON.parse (<anonymous>)
       at /usr/local/Cellar/yarn/1.9.4/libexec/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -42,6 +42,8 @@ npm manifest:
       "webpack-cli": "^3.1.0"
     },
     "scripts": {
+      "build": "webpack --progress --p --mode=production",
+      "watch": "webpack --progress --watch --mode=development",
       "cucumber": "superstatic src -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
     },
   }
