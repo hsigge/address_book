@@ -1,8 +1,14 @@
 {
-  "name": "Rhon",
+  "name": "Hanna",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/RhonGabriel/address_book.git",
-  "author": "rhon <rhoneil.gabriel@me.com>",
-  "license": "MIT"
+  "repository": "https://github.com/hsigge/address_book",
+  "author": "hsigge <hanna.sigge@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1",
+    "puppeteer": "^1.7.0",
+    "superstatic": "^6.0.1"
+  }
 }
