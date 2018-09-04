@@ -12,3 +12,7 @@
     "superstatic": "^6.0.1"
   }
 }
+"scripts": {
+  "cucumber": 
+  "superstatic src -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
+}
