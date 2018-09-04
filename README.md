@@ -3,7 +3,7 @@
 
 # User Stories
 
-````
+```
 CREATE A NEW CONTACT
 As a user
 In order to stay in touch with my friends
@@ -22,7 +22,7 @@ UPDATE EXISTING CONTACTS
 As a user
 In order to keep my friends' contact details accurate
 I would like to be able to update them when needed
-````
+```
 
 ```
 DELETE EXISTING CONTACTS
