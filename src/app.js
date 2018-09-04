@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
+
+      const storage = window.localStorage
   
       const {
         name,
@@ -24,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         notes: notes.value,
         twitter: twitter.value,
       }
-  
+
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
+      storage.setItem('contacts', JSON.stringify([contact]))
     })
   })
