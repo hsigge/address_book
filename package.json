@@ -1,0 +1,8 @@
+{
+  "name": "Rhon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RhonGabriel/address_book.git",
+  "author": "rhon <rhoneil.gabriel@me.com>",
+  "license": "MIT"
+}
