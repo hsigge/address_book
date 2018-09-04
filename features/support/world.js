@@ -11,7 +11,7 @@ class AddressBookWorld {
   async openHomePage() {
     this.browser = await puppeteer.launch()
     this.page = await this.browser.newPage()
-    await this.page.waitForSelector(btnSelector)
+    await this.page.waitForSelector
     await this.page.goto(HOME_PAGE)
   }
   async closeHomePage() {
