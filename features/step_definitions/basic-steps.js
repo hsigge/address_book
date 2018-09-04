@@ -1,12 +1,11 @@
-const { Given, Then, When } = require("cucumber");
+const { After, Given, Then, When } = require("cucumber");
 
 Given('I visit the site', async function() {
     return await this.openHomePage()
   })
 
-Then("I should see {string}", function(string) {
-  // Write code here that turns the phrase above into concrete actions
-  return "pending";
+Then("I should see {string}", async function(content) {
+  return await this.pageHasTextContent(content)
 })
 
 When('I click {string}', async function(string) {
@@ -27,4 +26,8 @@ Then('I should have {int} contact in my address book', async function(int) {
 Then('I should not see {string}', async function(string) {
   // Write code here that turns the phrase above into concrete actions
   return 'pending'
+})
+
+After(async function() {
+  return await this.closeHomePage()
 })
