@@ -17,10 +17,10 @@ class AddressBookWorld {
   async closeHomePage() {
     await this.browser.close()
   }
+
   async pageHasTextContent(expectedContent) {
     const pageContent = await this.page.content()
     const actualContent = pageContent.match(expectedContent)[0]
-
     expect(actualContent).to.be.eq(expectedContent)
   }
 
@@ -36,7 +36,14 @@ class AddressBookWorld {
     this.inputElement = await this.page.$(inputSelector)
     await this.inputElement.type(content)
     }
-    
+
+    async checkContactStorageCount(expectedCount) {
+        const actualCount = await this.page.evaluate(
+          () => JSON.parse(window.localStorage.getItem('contacts')).length
+        )
+        expect(actualCount).to.be.eq(expectedCount)
+      }
+  
   btnSelectorFromName(btnName) {
     switch (btnName) {
       case 'add contact':

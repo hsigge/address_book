@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const addContactForm = document.querySelector('.new-contact-form')
-        
   
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
@@ -29,5 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
       storage.setItem('contacts', JSON.stringify([contact]))
+
+      let contacts = JSON.parse(storage.getItem('contacts'))
+      
+      let hanna = contacts.length
+      const actualCount = hanna.push(contacts)
+    
     })
   })
