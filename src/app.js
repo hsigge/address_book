@@ -1,11 +1,10 @@
+const storage = window.localStorage
     document.addEventListener('DOMContentLoaded', () => {
 
     const addContactForm = document.querySelector('.new-contact-form')
   
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
-
-      const storage = window.localStorage
   
       const {
         name,
@@ -30,8 +29,7 @@
       storage.setItem('contacts', JSON.stringify([contact]))
 
       let contacts = JSON.parse(storage.getItem('contacts')) || []
-      
-      let actualCount = actualCount.push(contacts)
+      contacts.push(contact)
     
     })
   })
