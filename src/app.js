@@ -2,7 +2,7 @@ const storage = window.localStorage
 
 const renderContacts = () => {
   const storage = window.localStorage
-  const contacts = JSON.parse(storage.getItem('contacts'))
+ const contacts = JSON.parse(storage.getItem('contacts'))
 
   let div = document.querySelector('.contact-list')
 
@@ -66,6 +66,8 @@ const renderContacts = () => {
       
       let contacts = JSON.parse(storage.getItem('contacts')) || []
       contacts.push(contact)
-    
+
+      storage.setItem('contacts', JSON.stringify(contacts))
+  
     })
   })
