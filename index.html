@@ -9,30 +9,62 @@
   <title>Address book</title>
 </head>
 
-<body>
-
-  <h1>Contacts</h1>
-
-  <button class="add-contact">Add Contact</button>
-
-  <div class="contact-list">
+<body class="bg-grey-light">
+  
+  <div class="container mx-20 mt-24 bg-orange-lighter rounded-full py-5 max-w-sm shadow-lg mt-10 hover:bg-grey">
+      <h1 class= "roman font-thin text-3xl text-center text-red-dark">Contacts</h1>
   </div>
 
-  <form class="new-contact-form" action="#">
-    <label for="name">Name</label>
-    <input id="contact-name" name="name" type="text">
-    <label for="email">Email</label>
-    <input id="contact-email" name="email" type="email">
-    <label for="phone">Phone</label>
-    <input id="contact-phone" name="phone" type="text">
-    <label for="company">Company</label>
-    <input id="contact-company" name="company" type="text">
-    <label for="notes">Notes</label>
-    <textarea id="contact-notes" name="notes" type="text"></textarea>
-    <label for="twitter">Twitter</label>
-    <input id="contact-twitter" name="twitter" type="text">
-    <input class="save-contact" type="submit" value="Save contact">
-</form>
+  <div class="static flex mb-4 flex-wrap">
+
+     <div class="max-w-md w-full lg:flex px-2">
+         <div class="ml-10 mr-1 mt-1 h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
+            <img class="mt-12 h-48" src="addressbook.png" alt="this is image">
+            <button class="mb-4 shadow-lg bg-orange-lighter hover:bg-grey text-white font-thin py-3 px-3 rounded-full text-red-dark add-contact">Add Contact</button>
+          </div>
+  
+      <form class="w-full w-1/3 new-contact-form mt-12 items-center ml-10" action="#">
+        
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify rounded>
+                <label for="name">Name</label>
+                <input class="flex-1 text-grey-darker text-center px-2 py-2 ml-12 rounded-full" placeholder="John Snow" id="contact-name" name="name" type="text">
+          </div>
+
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify>
+                <label for="email">Email</label>
+                <input class="flex-1 text-grey-darker text-center px-2 py-2 ml-12 rounded-full" placeholder="john@snow.com" id="contact-email" name="email" type="email">
+          </div>
+
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify-center>
+                <label for="phone">Phone</label>
+          <input class="flex-1 text-grey-darker text-center px-2 py-2 ml-12 rounded-full" placeholder="0123456789" id="contact-phone" name="phone" type="text">
+          </div>
+
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify-center>
+                <label for="company">Company</label>
+                <input class="flex-1 text-grey-darker text-center px-2 py-2 ml-8 rounded-full" placeholder="King of the north" id="contact-company" name="company" type="text">
+           </div>
+
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify-center>
+                <label for="notes">Notes</label>
+                <textarea class="flex-1 text-grey-darker text-center px-2 py-2 ml-12 rounded-full" placeholder="add notes" id="contact-notes" name="notes" type="text"></textarea>
+          </div>
+
+    
+          <div class="flex bg-orange-lighter hover:bg-grey text-red-dark font-thin py-2 px-5 justify-center>
+                <label for="twitter">Twitter</label>
+                <input class="flex-1 text-grey-darker text-center px-2 py-2 ml-12 rounded-full" placeholder="@johnsnow" id="contact-twitter" name="twitter" type="text">
+          </div>
+
+          <input class="shadow-lg ml-auto mt-3 bg-orange-lighter hover:bg-grey text-white font-thin py-3 px-3 rounded-full text-red-dark save-contact" type="submit" value="Save contact">
+        </form>
+
+      </div>
+
+      <div class="contact-list ml-20 w-full w-1/3 max-w-sm flex mt-18 pt-12 ml-10">
+        </div>
+    </div>
+
 
 <script src="./dist/bundle.js"></script>
 
