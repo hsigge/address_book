@@ -1,5 +1,6 @@
 # Address Book [es2015]
 
+Create an online address book that allows the user to manage their friends' contact details. 
 
 # User Stories
 
@@ -17,16 +18,27 @@ In order to contact my friends
 I would like to be able to view a list of my saved contacts
 ```
 
-```
-UPDATE EXISTING CONTACTS
-As a user
-In order to keep my friends' contact details accurate
-I would like to be able to update them when needed
-```
+## Getting Started
 
-```
-DELETE EXISTING CONTACTS
-As a user
-In order to maintain my contact list up to date
-I would like to be able to delete contacts
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+## Deployment
+
+The address book is deployed on http://
+
+## Built With
+
+* HTML
+* JavaScript
+* [Tailwind](https://tailwindcss.com/) - For CSS styling
+
+## Authors
+
+* **Rhon Gabriel** - [RhonGabriel](https://github.com/RhonGabriel)
+* **Hanna Sigge** - [HSigge](https://github.com/hsigge)
+
+## Acknowledgments
+
+* A big thanks to the August 2018 cohort and coaches at Craft Academy for support, inspiration and friendly banter during the development of this address book. 
+
+
